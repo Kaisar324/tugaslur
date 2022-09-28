@@ -1,0 +1,29 @@
+package com.mycompany.aritmatika;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nitro 5
+ */
+public class Aritmatika {
+
+    public static void main(String[] args) {
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        int userInput;
+        int jam, menit, detik;
+        
+        System.out.print("Masukkan jumlah detik : ");
+        userInput = keyboard.nextInt();
+        
+        jam = userInput / 3600;
+        menit = (userInput%3600) / 60;
+        detik = userInput % 60;
+        
+        System.out.println("Hasil dari " + userInput + " detik adalah :");
+        System.out.println(jam + " Jam, " + menit + " Menit, " + detik + " Detik.");
+        
+    }
+}
