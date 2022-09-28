@@ -1,0 +1,56 @@
+package com.mycompany.aritmatika;
+
+/**
+ *
+ * @author Nitro 5
+ */
+public class Pembanding {
+    public static void main(String[] args) {
+        
+        int age = 36;
+        
+        boolean hasilBandingSatu = age < 25;
+        boolean hasilBandingDua = age != 26;
+        
+        System.out.println("age == 26");
+        System.out.println("Hasil Banding age < 25 : " + hasilBandingSatu);
+        System.out.println("Hasil Banding age != 26 : " + hasilBandingDua);
+        
+        
+        
+        
+        String kataSatu = "apa";
+        String kataDua = "Apa";
+
+        System.out.println("equals; apakah kataSatu = apa sama dengan kataDua = Apa?");
+        
+        if (kataSatu.equals(kataDua)) {
+            System.out.println("Ya");
+        } else {
+            System.out.println("Tidak");
+        }
+        
+        System.out.println("equalsIgnoreCase; apakah kataSatu = apa sama dengan kataDua = Apa?");
+        
+        if (kataSatu.equalsIgnoreCase(kataDua)) {
+            System.out.println("Ya");
+        } else {
+            System.out.println("Tidak");
+        }
+        
+        
+        
+        String kalimatSatu = "ini";
+        String kalimatDua = "Ini";
+        
+        System.out.println("compareTo < 0; apakah kalimatSatu = ini lebih dahulu kalimatDua = Ini?");
+        System.out.println(kalimatSatu.compareTo(kalimatDua) < 0);
+        System.out.println("compareTo > 0; apakah kalimatSatu = ini sebelum kalimatDua = Ini?");
+        System.out.println(kalimatSatu.compareTo(kalimatDua) > 0);
+        System.out.println("compareTo == 0; apakah kalimatSatu = ini sama dengan kalimatDua = Ini?");
+        System.out.println(kalimatSatu.compareTo(kalimatDua) == 0);
+     
+        
+        
+    }
+}
